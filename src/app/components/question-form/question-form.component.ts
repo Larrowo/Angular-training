@@ -1,6 +1,7 @@
 import { Component } from '@angular/core'
 import { CommonModule } from '@angular/common'
 import { FormsModule } from '@angular/forms'
+import { NotesService } from 'src/app/services/notes.service'
 
 @Component({
   selector: 'app-question-form',
@@ -15,4 +16,12 @@ export class QuestionFormComponent {
   setValue (): void {
     this.text = 'Hello World!'
   }
+
+  addNote (): void {
+    this.noteService.addNote({
+      description: this.text
+    })
+  }
+
+  constructor (private readonly noteService: NotesService) {}
 }

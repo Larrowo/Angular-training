@@ -1,0 +1,15 @@
+
+h2{
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.notesListContainer{
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
