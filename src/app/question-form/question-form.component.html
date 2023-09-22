@@ -1,9 +1,10 @@
 <form >
-    <div class="formGroup">
+    <form class="formGroup">
         <label for="textInput">Please enter your text</label>
-        <input [(ngModel)]="text" type="text" id="textInput">
+        <input [(ngModel)]="text" id="textInput" name="textInput">
+
         <button (click)="setValue()" >Set Value</button>
         <p>Your value was:</p>
         <p>{{text}}</p>
-    </div>
+    </form>
 </form>
