@@ -1,10 +1,10 @@
 import { Component } from '@angular/core'
 import { CommonModule } from '@angular/common'
 import { RouterOutlet } from '@angular/router'
-import { HttpClientModule } from '@angular/common/http'
 
 import { QuestionFormComponent } from './components/question-form/question-form.component'
 import { NoteListComponent } from './components/note-list/note-list.component'
+import { MatToolbarModule } from '@angular/material/toolbar'
 
 @Component({
   selector: 'app-root',
@@ -14,7 +14,7 @@ import { NoteListComponent } from './components/note-list/note-list.component'
     RouterOutlet,
     QuestionFormComponent,
     NoteListComponent,
-    HttpClientModule
+    MatToolbarModule
   ],
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']

@@ -6,9 +6,9 @@ import { Observable } from 'rxjs'
   providedIn: 'root'
 })
 export class NotesService {
-  private readonly url = 'https://catfact.ninja/facts?limit=5'
-
   constructor (private readonly http: HttpClient) { }
+
+  private readonly url = 'https://catfact.ninja/facts?limit=3'
 
   fetchData (): Observable<any> {
     return this.http.get(this.url)
